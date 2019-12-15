@@ -20,6 +20,8 @@ namespace asp_dotnet_core_mvc.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Logging from HomeController.");
+            _logger.LogError("ERROR from HomeController.");
             return View();
         }
 
